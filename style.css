@@ -1,0 +1,119 @@
+/* Cores baseadas no Modo Escuro e Amarelo Pastel da sua imagem */
+:root {
+    --bg-color: #121926;         /* Azul marinho de fundo */
+    --card-bg: #1a2639;          /* Azul ligeiramente mais claro para os blocos */
+    --text-gold: #fbe695;         /* O amarelo/dourado dos botões e títulos */
+    --text-white: #ffffff;        /* Texto corrido */
+    --text-muted: #b0c4de;        /* Subtítulos */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-white);
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Remove sublinhados de qualquer link que você adicionar */
+a {
+    text-decoration: none;
+}
+
+/* Remove bordas padrão de inputs e botões */
+button, input, select, textarea {
+    border: none;
+    outline: none;
+}
+
+.container {
+    max-width: 850px;
+    width: 100%;
+}
+
+/* Topo com efeito de Banner do App (Sem Borda) */
+.header-banner {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    color: var(--text-gold);
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Títulos das seções (Sem Borda Inferior) */
+h2 {
+    color: var(--text-gold);
+    font-size: 1.4rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: var(--text-gold);
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+/* Estrutura dos Cards de Conteúdo (Borda Lateral Removida) */
+.card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px; /* Arredondado em todos os cantos agora */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Caixa Amarela Destacada para as Boas-Vindas */
+.highlight-box {
+    background-color: var(--text-gold);
+    color: var(--bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 15px;
+    line-height: 1.6;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+strong {
+    color: var(--text-gold);
+    font-weight: 600;
+}
