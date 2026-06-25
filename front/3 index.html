@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="grid-container">
+
+            <div class="content-card">
+                <h2>LOGIN</h2>
+                <form class="project-form">
+                    <div class="form-group">
+                        <label for="l-email">E-mail</label>
+                        <input type="email" id="l-email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="l-senha">Senha</label>
+                        <input type="password" id="l-senha" placeholder="Senha" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Entrar</button>
+                </form>
+            </div>
+
+            <div class="content-card">
+                <h2>CADASTRO DE USUÁRIO</h2>
+                <form class="project-form">
+                    <div class="form-group">
+                        <label for="c-nome">Nome</label>
+                        <input type="text" id="c-nome" placeholder="Nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-email">E-mail</label>
+                        <input type="email" id="c-email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-senha">Senha</label>
+                        <input type="password" id="c-senha" placeholder="Senha" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Cadastrar</button>
+                </form>
+            </div>
+
+            <div class="content-card">
+                <h2>NOVA TAREFA</h2>
+                <form class="project-form">
+                    <div class="form-group">
+                        <label for="t-titulo">Título</label>
+                        <input type="text" id="t-titulo" placeholder="Título da tarefa" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="t-desc">Descrição</label>
+                        <textarea id="t-desc" rows="2" placeholder="Breve descrição" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="t-prioridade">Prioridade</label>
+                        <select id="t-prioridade">
+                            <option value="baixa">Baixa</option>
+                            <option value="media">Média</option>
+                            <option value="alta">Alta</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Adicionar</button>
+                </form>
+            </div>
+
+            <div class="content-card">
+                <h2>RESERVA DE ESPAÇO</h2>
+                <form class="project-form">
+                    <div class="form-group">
+                        <label for="r-nome">Nome</label>
+                        <input type="text" id="r-nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="r-turma">Turma</label>
+                        <input type="text" id="r-turma" placeholder="Ex: 3º A" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="r-horario">Horário</label>
+                        <input type="datetime-local" id="r-horario" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Reservar</button>
+                </form>
+            </div>
+
+            <div class="content-card full-width">
+                <h2>CONTATO COORDENAÇÃO</h2>
+                <form class="project-form">
+                    <div class="form-group">
+                        <label for="co-assunto">Assunto</label>
+                        <input type="text" id="co-assunto" placeholder="Assunto da mensagem" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="co-msg">Mensagem</label>
+                        <textarea id="co-msg" rows="3" placeholder="Escreva aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
