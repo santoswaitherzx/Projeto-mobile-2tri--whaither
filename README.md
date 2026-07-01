@@ -1,1 +1,0 @@
-# Projeto-mobile-2tri--whaither
